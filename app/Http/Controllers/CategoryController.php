@@ -7,15 +7,13 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Category $category)
+    public function detail($id)
     {
-        //
+        $categories = Category::all();
+        $category = Category::find($id);
+        if (!isset($category)) return abort(404);
+
+
+        return view('category.index', compact('categories', 'category'));
     }
 }
