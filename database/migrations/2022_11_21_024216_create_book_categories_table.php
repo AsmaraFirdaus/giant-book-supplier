@@ -17,6 +17,7 @@ class CreateBookCategoriesTable extends Migration
             $table->id();
             $table->foreignId('book_id')->references('id')->on('books');
             $table->foreignId('category_id')->references('id')->on('categories');
+            $table->unique(['book_id', 'category_id']);
         });
     }
 
