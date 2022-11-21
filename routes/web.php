@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PublisherController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [BookController::class, 'index']);
 Route::get('/book/{id}', [BookController::class, 'detail'])->name('book.detail');
 Route::get('/category/{id}', [CategoryController::class, 'detail'])->name('category.detail');
+Route::get('/publisher', [PublisherController::class, 'index'])->name('publisher.index');

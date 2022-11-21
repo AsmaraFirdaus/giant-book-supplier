@@ -39,7 +39,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Publisher</a>
+                        <a class="nav-link" href="{{ route('publisher.index') }}">Publisher</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/">Contact</a>
