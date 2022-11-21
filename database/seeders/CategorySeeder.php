@@ -14,8 +14,15 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        for ($i = 1; $i < 5; $i++) {
-            Category::create(['name' => 'Category ' . $i]);
+        $categories = [
+            'Adventure',
+            'Crime',
+            'Comedy',
+            'Fantasy',
+            'Horror',
+        ];
+        foreach ($categories as $c) {
+            Category::create(['name' => $c]);
         }
     }
 }
