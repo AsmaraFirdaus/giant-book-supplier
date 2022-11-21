@@ -1,4 +1,4 @@
-# MID EXAM COMP6681001 - Web Programming
+# Giant Book Supplier
 
 JEVON LEVIN / 2440013600 / LL01
 
