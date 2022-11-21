@@ -8,26 +8,20 @@ use Illuminate\Http\Request;
 
 class BookController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $categories = Category::all();
         $books = Book::all();
-        return view('index', compact('categories', 'books'));
+        return view('book.index', compact('categories', 'books'));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Book  $book
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Book $book)
+    public function detail($id)
     {
-        //
+        $categories = Category::all();
+        $book = Book::find($id);
+        if (!isset($book)) return abort(404);
+
+        return view('book.detail', compact('categories', 'book'));
     }
 }
