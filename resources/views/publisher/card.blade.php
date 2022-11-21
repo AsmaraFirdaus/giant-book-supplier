@@ -2,7 +2,7 @@
     <div class="card h-100">
         <div class="row g-0 h-100">
             <div class="col-md-4 d-flex align-items-center">
-                <img src="{{ Storage::url($publisher->image) }}" class="img-fluid rounded"
+                <img src="{{ asset($publisher->image) }}" class="img-fluid rounded"
                     alt="{{ $publisher->name . ' image' }}">
             </div>
             <div class="col-md-8">

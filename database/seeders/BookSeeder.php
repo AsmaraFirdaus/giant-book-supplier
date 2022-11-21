@@ -23,7 +23,7 @@ class BookSeeder extends Seeder
                 'author' => $faker->name(),
                 'year' => $faker->year(),
                 'synopsis' => $faker->paragraph(5),
-                'image' => 'book/dummy.jpg'
+                'image' => 'image/book/dummy.jpg'
             ]);
         }
     }

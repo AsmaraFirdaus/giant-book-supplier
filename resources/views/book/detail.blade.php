@@ -3,7 +3,7 @@
 @section('content')
     <div class="row">
         <div class="col-lg-2" style="width: 18rem;">
-            <img src="{{ Storage::url($book->image) }}" class="img-thumbnail" alt="{{ $book->title . ' Image' }}" />
+            <img src="{{ asset($book->image) }}" class="img-thumbnail" alt="{{ $book->title . ' Image' }}" />
         </div>
         <div class="col">
             <h5>{{ $book->title }}</h5>

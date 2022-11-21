@@ -22,7 +22,7 @@ class PublisherSeeder extends Seeder
                 'address' => $faker->address(),
                 'phone' => $faker->phoneNumber(),
                 'email' => $faker->safeEmail(),
-                'image' => 'publisher/dummy.png'
+                'image' => 'image/publisher/dummy.png'
             ]);
         }
     }
