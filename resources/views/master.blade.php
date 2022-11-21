@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giant Book Supplier | @yield('title')</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <style>
@@ -13,6 +14,10 @@
         body {
             height: 100%;
             width: 100%;
+        }
+
+        * {
+            font-family: "Ubuntu", Verdana, Geneva, Tahoma, sans-serif !important
         }
     </style>
 </head>
@@ -54,7 +59,14 @@
         @yield('content')
     </main>
 
-    <footer class="bg-warning py-2 mt-auto w-100 d-flex justify-content-center">&copy; Giant Book Supplier 2022</footer>
+    <footer class="bg-warning py-2 mt-auto w-100 d-flex flex-column align-items-center justify-content-center">
+        <div>
+            &copy; Giant Book Supplier 2022
+        </div>
+        <i>
+            by Jevon Levin (2440013600)
+        </i>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">

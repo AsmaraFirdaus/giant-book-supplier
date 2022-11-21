@@ -9,8 +9,10 @@
                 <div class="card-body h-100 d-flex flex-column">
                     <h5 class="card-title">{{ $publisher->name }}</h5>
                     <p class="card-text ">{{ $publisher->address }}</p>
-                    <a href="{{ route('publisher.detail', $publisher->id) }}" class="btn btn-primary mt-auto"
-                        style="width: fit-content">Detail</a>
+                    <div class="mt-auto d-flex w-100 justify-content-end">
+                        <a href="{{ route('publisher.detail', $publisher->id) }}" class="btn btn-primary">Detail</a>
+
+                    </div>
                 </div>
             </div>
         </div>
