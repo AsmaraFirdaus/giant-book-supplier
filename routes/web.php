@@ -20,3 +20,4 @@ Route::get('/', [BookController::class, 'index']);
 Route::get('/book/{id}', [BookController::class, 'detail'])->name('book.detail');
 Route::get('/category/{id}', [CategoryController::class, 'detail'])->name('category.detail');
 Route::get('/publisher', [PublisherController::class, 'index'])->name('publisher.index');
+Route::get('/publisher/{id}', [PublisherController::class, 'detail'])->name('publisher.detail');

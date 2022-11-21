@@ -15,4 +15,13 @@ class PublisherController extends Controller
         $publishers = Publisher::all();
         return view('publisher.index', compact('categories', 'publishers'));
     }
+
+    public function detail($id)
+    {
+        $categories = Category::all();
+        $publisher = Publisher::find($id);
+        if (!isset($publisher)) return abort(404);
+
+        return view('publisher.detail', compact('categories', 'publisher'));
+    }
 }

@@ -20,7 +20,7 @@
 <body class="d-flex flex-column">
     <nav class="navbar navbar-expand-lg bg-warning px-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/">Giant Book Supplier</a>
+            <a class="navbar-brand fw-bolder" href="/">Giant Book Supplier</a>
             <div class="">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
