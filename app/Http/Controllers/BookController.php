@@ -24,4 +24,10 @@ class BookController extends Controller
 
         return view('book.detail', compact('categories', 'book'));
     }
+
+    public function contact()
+    {
+        $categories = Category::all();
+        return view('contact', compact('categories'));
+    }
 }
