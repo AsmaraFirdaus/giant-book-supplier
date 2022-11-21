@@ -6,7 +6,7 @@
             <img src="{{ asset($book->image) }}" class="img-thumbnail" alt="{{ $book->title . ' Image' }}" />
         </div>
         <div class="col">
-            <h5>{{ $book->title }}</h5>
+            <h4>{{ $book->title }}</h4>
             <p><span class="text-secondary">Author: </span> {{ $book->author }}</p>
             <p><span class="text-secondary">Publisher: </span> {{ $book->publisher->name }}</p>
             <p><span class="text-secondary">Year: </span> {{ $book->year }}</p>
