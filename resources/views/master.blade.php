@@ -59,7 +59,7 @@
         @yield('content')
     </main>
 
-    <footer class="bg-warning py-2 mt-auto w-100 d-flex flex-column align-items-center justify-content-center">
+    <footer class="bg-warning py-2 mt-auto w-100 d-flex gap-1 align-items-center justify-content-center">
         <div>
             &copy; Giant Book Supplier 2022
         </div>

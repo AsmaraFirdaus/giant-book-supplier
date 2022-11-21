@@ -1,7 +1,7 @@
 @extends('master')
 @section('title', 'Book Detail')
 @section('content')
-    <div class="row">
+    <div class="row px-5">
         <div class="col-lg-2" style="width: 18rem;">
             <img src="{{ asset($book->image) }}" class="img-thumbnail" alt="{{ $book->title . ' Image' }}" />
         </div>
